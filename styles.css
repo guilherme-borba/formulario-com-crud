@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+form {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+/* Responsividade com Flexbox */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+form .radio-options {
+  display: flex;
+}
+
+form .radio-options label {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  form {
+    margin: 10px;
+  }
+
+  form .radio-options {
+    flex-direction: column;
+  }
+}
+
+/* Estilizando o botão de continuar */
+form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+.success-message {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
